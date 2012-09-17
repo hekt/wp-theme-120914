@@ -4,4 +4,4 @@ http://blog.hekt.org/
 
 ## ToDo
 
-* static 404 page
+* generate a static 404 page
