@@ -1,0 +1,22 @@
+@charset "utf-8";
+/*
+Theme Name: blog.hekt.org 120914
+Theme URI: http://blog.hekt.org/
+Description: 2012-01-26
+Author: hekt
+Author URI: http://www.hekt.org/
+*/
+
+/* normalize */
+@import url("http://blog.hekt.org/styles/normalize.css");
+
+/* syntaxhighlighter */
+@import url("http://blog.hekt.org/styles/sh/shCore.css");
+@import url("http://blog.hekt.org/styles/sh/shCoreDefault.css");
+@import url("./styles/shTheme.css");
+
+/* share buttons */
+@import url("http://blog.hekt.org/styles/share-buttons.css");
+
+/* main */
+@import url("./styles/main.css");
