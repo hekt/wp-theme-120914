@@ -194,6 +194,20 @@ body > footer address {
 }
 
 /* 
+  404 search
+ */
+article #searchform {
+  margin: 1.5em 0 1.5em;
+  background-color: #f8f8f8;
+  padding: 2em 1.5em;
+  text-align: center;
+}
+article #searchform input[type="text"] {
+  padding: 4px 8px;
+  width: 240px;
+}
+
+/* 
   pagenavi
  */
 .pagenavi {

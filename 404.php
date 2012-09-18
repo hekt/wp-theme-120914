@@ -15,6 +15,8 @@
 
   <section>
     <p>The page you requested doesn't exist.</p>
+    <p>If you visited here from Serach Engine, Please search once:</p>
+    <?php get_search_form(); ?>
   </section>
 </ariticle>
 
