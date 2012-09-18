@@ -14,8 +14,8 @@
   </header>
 
   <section>
-    <p>The page you requested doesn't exist.</p>
-    <p>If you visited here from Search Engine, Please search once:</p>
+    <p>要求されたページは存在しません。</p>
+    <p>もし検索サイトの結果からここにこられたのなら、下の検索フォームでもう一度検索を試してみてください。</p>
     <?php get_search_form(); ?>
   </section>
 </ariticle>
