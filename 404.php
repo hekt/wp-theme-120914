@@ -5,7 +5,7 @@
 
 <div class="wrap" id="body">
 
-<artcle id="error_404">
+<article id="error_404">
   <header>
     <h1><a href="http://blog.hekt.org/">404 Not Found</h1>
     <ul class="meta">
@@ -16,7 +16,7 @@
   <section>
     <p>The page you requested doesn't exist.</p>
   </section>
-</article>
+</ariticle>
 
 </div>
 
