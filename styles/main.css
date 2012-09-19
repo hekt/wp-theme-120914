@@ -445,19 +445,10 @@ blockquote + ul.cite {
   text-align: right;
   font-style: italic;
 }
-/* blockquote:before { */
-/*   content: "\201C"; */
-/*   position: absolute; */
-/*   left: -42px; */
-/*   top: -32px; */
-/*   font-size: 64px; */
-/*   color: #ccc; */
-/* } */
 pre {
   margin: 1.5em 0;
   padding: 1em 2em;
   border: 1px solid #EEE;
-  /* border-color: #EEE #F8F8F8 #F8F8F8 #EEE; */
   background-color: #F8F8f8;
   line-height: 1.4;
   font-family: monospace;
@@ -734,7 +725,6 @@ div.amazonAssociate dd.aaAuthor {
 div.syntaxhighlighter {
   margin: 1.5em 0 !important;
   border: 1px solid #EEE;
-  /* border-color: #EEE #F8F8F8 #F8F8F8 #EEE; */
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -749,7 +739,6 @@ div.syntaxhighlighter .toolbar {
   padding: 1em 0 !important;
 }
 .syntaxhighlighter .gutter {
-  /* border-right: 2px solid #073642 !important; */
   border-color: #eee !important;
 }
 .syntaxhighlighter .gutter .line {
