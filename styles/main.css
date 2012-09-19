@@ -265,12 +265,19 @@ article .readmore:before {
 }
 article > header {
   margin: 0 -24px;
-  padding: 8px 24px 12px;
+  padding: 12px 24px 12px;
   background-color: #F8F8F8;
 }
+article > header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 article h1 {
+  display: inline;
   margin-top: 0;
   padding-top: 0;
+  line-height: 36px;
 }
 article h1 a:visited {
   color: #268BD2;
@@ -287,6 +294,12 @@ article h1:hover .edit {
 article .meta, article .meta ul {
   margin: 0;
   padding: 0;
+}
+article .meta {
+  float: right;
+  display: inline;
+  line-height: 20px;
+  margin-top: 12px;
 }
 article .meta a {
   color: #333;
