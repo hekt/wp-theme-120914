@@ -264,6 +264,7 @@ article .readmore:before {
   color: #888;
 }
 article > header {
+  position: relative;
   margin: 0 -24px;
   padding: 12px 24px 12px;
   background-color: #F8F8F8;
@@ -282,13 +283,20 @@ article h1 {
 article h1 a:visited {
   color: #268BD2;
 }
-article  h1 .edit {
+article .edit {
   display: none;
-  float: right;
-  font-size: 0.5em;
 }
-article h1:hover .edit {
-  display: inline;
+article header:hover .edit {
+  display: block;
+  position: absolute;
+  bottom: -25px;
+  right: 24px;
+  width: 64px;
+  border-top: 1px dashed #DDD;
+  background-color: #F8F8F8;
+  line-height: 24px;
+  text-align: center;
+  font-size: 0.5em;
 }
 
 article .meta, article .meta ul {
