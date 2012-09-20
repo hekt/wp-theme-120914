@@ -377,7 +377,7 @@ h3, article > section section section h1 {
   border-bottom: none;
   line-height: 26px;
 }
-h3:before {
+h3:before, article > section section section h1:before {
   display: inline-block;
   width: 8px;
   height: 8px;
@@ -386,7 +386,7 @@ h3:before {
   content: "";
   background-color: #ddd;
 }
-h4, h5, h6 {
+h4, h5, h6, aritcle > section section section section h1 {
   font-weight: bold;
   color: #666;
 }
