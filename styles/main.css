@@ -287,16 +287,11 @@ article .edit {
   display: none;
 }
 article header:hover .edit {
-  display: block;
+  display: inline;
   position: absolute;
-  bottom: -25px;
-  right: 24px;
-  width: 64px;
-  border-top: 1px dashed #DDD;
-  background-color: #F8F8F8;
-  line-height: 24px;
-  text-align: center;
-  font-size: 0.5em;
+  right: 0;
+  bottom: 0;
+  font-size: 11px;
 }
 
 article .meta, article .meta ul {
