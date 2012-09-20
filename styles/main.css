@@ -12,8 +12,15 @@ input:focus,textarea:focus
  */
 html {
   background-color: #FFF;
+  background-color: #F8F8F8;
   color: #444;
   font-family: "Lucida Grande", "Segoe UI", sans-serif;
+}
+body {
+  margin: 32px auto 0;
+  padding: 36px 48px 0;
+  width: 720px;
+  background-color: #FFF;
 }
 a {
   color: #268BD2;
@@ -181,9 +188,9 @@ body > header input {
  */
 body > footer {
   width: 720px;
-  margin: 3em auto 0;
-  padding: 0 0 3em 0;
-  border-bottom: 4px solid #aaa;
+  margin: 3em -48px 0;
+  padding: 3em 48px 3em;
+  background-color: #f8f8f8;
 }
 body > footer address {
   text-align: center;
@@ -212,9 +219,7 @@ article #searchform input[type="text"] {
  */
 .pagenavi {
   width: 720px;
-  margin: 4em auto 3em;
-  padding: 0 0 4em;
-  border-bottom: 1px dashed #aaa;
+  margin: 4em auto 4em;
   text-align: center;
 }
 .pagenavi .wp-pagenavi {
@@ -265,9 +270,6 @@ article .readmore:before {
 }
 article > header {
   position: relative;
-  margin: 0 -24px;
-  padding: 12px 24px 12px;
-  background-color: #F8F8F8;
 }
 article > header:after {
   content: "";
@@ -275,9 +277,6 @@ article > header:after {
   clear: both;
 }
 article h1 {
-  display: inline;
-  margin-top: 0;
-  padding-top: 0;
   font-size: 1.8em;
   line-height: 36px;
 }
@@ -303,12 +302,6 @@ article header:hover .edit {
 article .meta, article .meta ul {
   margin: 0;
   padding: 0;
-}
-article .meta {
-  float: right;
-  display: inline;
-  line-height: 20px;
-  margin-top: 12px;
 }
 article .meta a {
   color: #333;
