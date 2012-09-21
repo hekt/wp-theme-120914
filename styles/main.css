@@ -10,17 +10,12 @@ input:focus,textarea:focus
 /* 
    General
  */
-html {
-  background-color: #FFF;
+body {
+  width: 900px;
+  margin: 0 auto;
   background-color: #F8F8F8;
   color: #444;
   font-family: "Lucida Grande", "Segoe UI", sans-serif;
-}
-body {
-  margin: 0 auto 0;
-  padding: 36px 48px 0;
-  width: 720px;
-  background-color: #FFF;
 }
 a {
   color: #268BD2;
@@ -129,16 +124,16 @@ input[type="button"]:active {
   Header
  */
 body > header {
-  width: 720px;
-  margin: 0 auto;
-  padding: 2.5em 0 2.5em;
-  border-top: 4px solid #aaa;
-  border-bottom: 1px dashed #aaa;
+  float: left;
+  width: 240px;
+  margin: 48px 0 0;
+  padding: 0;
+  text-align: center;
 }
 body > header h1 {
-  float:left;
-  width: 50%;
-  margin: 0;
+  margin: 0 0 24px;
+  padding: 0 0 24px;
+  border-bottom: 1px dashed #CCC;
   font-family: "Avenir Next Ultra Light", "Avenir Light", "Gill Sans Light", 
                "Segoe UI Light", "Avenir Next", "Avenir", "Gill Sans", 
                "Segoe UI", sans-serif;
@@ -163,11 +158,6 @@ body > header h1 a:visited:hover {
   text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
   color: #666;
 }
-body > header form:after {
-  display: block;
-  clear: both;
-  content: "";
-}
 body > header input[type="text"] {
   width: 180px;
   margin-top: 3px;
@@ -177,17 +167,25 @@ body > header input[type="submit"] {
   display: none;
 }
 body > header input {
-  float: right;
-  padding: 0 6px;
   line-height: 24px;
   font-size: 13px;
 }
 
+/* 
+   Body 
+ */
+#body {
+  float: left;
+  width: 612px;
+  margin: 0 0 0 48px;
+  padding: 48px 0 0 0;
+}
 
 /*
   Footer
  */
 body > footer {
+  clear: both;
   width: 720px;
   margin: 3em -48px 0;
   padding: 3em 48px 3em;
@@ -256,9 +254,9 @@ article #searchform input[type="text"] {
   Articles
  */
 article { 
+  position: relative;
   clear: both;
-  width: 720px;
-  margin: 2em auto 4em auto;
+  margin: 0;
   padding: 0 0 3em 0;
   border-bottom: 1px dashed #aaa;
   line-height: 1.7;
@@ -278,6 +276,7 @@ article > header:after {
   clear: both;
 }
 article h1 {
+  margin: 0;
   font-size: 1.8em;
   line-height: 36px;
 }
@@ -294,7 +293,6 @@ article header:hover .edit {
   bottom: 0;
   font-size: 11px;
 }
-
 article .meta, article .meta ul {
   margin: 0;
   padding: 0;
@@ -311,7 +309,7 @@ article .meta .date:before {
   content: "on ";
 }
 article .meta .tags:before {
-  content: ", in ";
+  content: "in ";
 }
 article > section {
   margin: 1.5em 0;
@@ -438,7 +436,7 @@ pre {
   margin: 1.5em 0;
   padding: 1em 2em;
   border: 1px solid #EEE;
-  background-color: #F8F8f8;
+  background-color: #fff;
   line-height: 1.4;
   font-family: monospace;
   font-size: 13px;
@@ -465,6 +463,9 @@ table .num {
 /* 
    Inline Elements
  */
+img.large_image {
+  float: right;
+}
 strong, em {
   color: #222;
 }
@@ -528,7 +529,6 @@ q {
  */
 
 #comments {
-  width: 720px;
   margin: 2em auto;
   padding: 0 0 1px 0;
 }
@@ -660,7 +660,6 @@ p.form-submit input[type="submit"] {
   display: none;
 }
 .autopagerize_page_info {
-  width: 720px;
   margin: 3em auto;
   padding: 0 0 3em;
   border-bottom: 1px dashed #aaa;
