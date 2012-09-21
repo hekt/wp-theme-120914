@@ -18,7 +18,7 @@ body {
   font-family: "Lucida Grande", "Segoe UI", sans-serif;
 }
 a {
-  color: #268BD2;
+  color: #28B;
   text-decoration: none;
 }
 a:hover {
@@ -280,8 +280,10 @@ article h1 {
   font-size: 1.8em;
   line-height: 36px;
 }
+article h1 a, 
 article h1 a:visited {
   color: #268BD2;
+  color: #2288BB;
 }
 article .edit {
   display: none;
