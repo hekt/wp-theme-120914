@@ -20,7 +20,7 @@ Author URI: http://www.hekt.org/
 
 /* share buttons */
 /* @import url("http://blog.hekt.org/styles/share-buttons.css"); */
-@import url("../../share-buttons.css");
+@import url("../../styles/share-buttons.css");
 
 /* main */
 @import url("./styles/main.css");
