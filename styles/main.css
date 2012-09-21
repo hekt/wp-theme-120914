@@ -10,17 +10,15 @@ input:focus,textarea:focus
 /* 
    General
  */
-html {
-  background-color: #FFF;
-  background-color: #F8F8F8;
-  color: #444;
-  font-family: "Lucida Grande", "Segoe UI", sans-serif;
-}
 body {
-  margin: 0 auto 0;
-  padding: 36px 48px 0;
-  width: 720px;
-  background-color: #FFF;
+  border-top: 12px solid #AAA;
+  background-color: #F8F8F8;
+  background-image: -webkit-gradient(linear, left top, left bottom,
+                                     from(#EEE), to(#F8F8F8));
+  background-size: 100% 240px;
+  background-repeat: no-repeat;
+  font-family: "Lucida Grande", "Segoe UI", sans-serif;
+  color: #444;
 }
 a {
   color: #268BD2;
@@ -130,21 +128,26 @@ input[type="button"]:active {
  */
 body > header {
   width: 720px;
-  margin: 0 auto;
-  padding: 2.5em 0 2.5em;
-  border-top: 4px solid #aaa;
-  border-bottom: 1px dashed #aaa;
+  margin: 2.5em auto;
+}
+body > header:after {
+  content: "";
+  display: block;
+  margin: 2.5em 0;
+  border-top: 1px dashed #CCC;
+  border-bottom: 1px dashed #FFF;
 }
 body > header h1 {
   float:left;
   width: 50%;
   margin: 0;
+  text-transform: uppercase;
+  text-shadow: 0 1px 1px #FFF;
   font-family: "Avenir Next Ultra Light", "Avenir Light", "Gill Sans Light", 
                "Segoe UI Light", "Avenir Next", "Avenir", "Gill Sans", 
                "Segoe UI", sans-serif;
   font-weight: 100;
   font-size: 26px;
-  text-transform: uppercase;
 }
 body > header h1 a {
   -webkit-transition-duration: 0.2s;
@@ -255,68 +258,90 @@ article #searchform input[type="text"] {
 /*
   Articles
  */
-article { 
+#body > article { 
   clear: both;
   width: 720px;
-  margin: 2em auto 4em auto;
-  padding: 0 0 3em 0;
-  border-bottom: 1px dashed #aaa;
+  margin: 3em auto;
+  padding: 0;
   line-height: 1.7;
   font-size: 14px;
 }
-article .readmore:before {
+#body > article .readmore:before {
   content: "\21D2";
   margin-right: 4px;
   color: #888;
 }
-article > header {
+#body > article > header {
   position: relative;
+  margin: 2em -12px;
+  /* border-radius: 5px 5px 4px 4px; */
+  /* box-shadow: 1px 1px 1px rgba(0,0,0,0.08); */
+  /* text-shadow: 0 1px 1px #FFF; */
 }
-article > header:after {
+#body > article > header:after {
   content: "";
   display: block;
   clear: both;
 }
-article h1 {
-  font-size: 1.8em;
-  line-height: 36px;
+#body > article h1 {
+  margin: 0 0;
+  padding: 8px 12px;
+  /* border-top: 1px solid #FAFAFA; */
+  /* border-radius: 5px 5px 0 0; */
+  background-color: #E8E8E8;
+  /* background-image: -webkit-gradient(linear, left top, left bottom, */
+  /*                                    from(#E8E8E8), to(#E0E0E0)); */
+  line-height: 32px;
+  font-size: 1.5em;
 }
-article h1 a:visited {
-  color: #268BD2;
+#body > article h1 a,
+#body > article h1 a:visited {
+  color: #444;
 }
-article .edit {
+#body > article .edit {
   display: none;
 }
-article header:hover .edit {
-  display: inline;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  font-size: 11px;
+/* #body > article header:hover .edit { */
+/*   display: inline; */
+/*   position: absolute; */
+/*   right: 0; */
+/*   bottom: 0; */
+/*   font-size: 11px; */
+/* } */
+
+.meta {
+  margin: 0;
+  margin-top: 2px;
+  /* margin-top: 1px; */
+  padding: 4px 12px;
+  background-color: #F0F0F0;
+  /* background-image: -webkit-gradient(linear, left top, left bottom, */
+  /*                                    from(#F0F0F0), to(#EEE)); */
+  text-align: right;
 }
 
-article .meta, article .meta ul {
+#body > article .meta ul {
   margin: 0;
   padding: 0;
 }
-article .meta a {
+#body > article .meta a {
   color: #333;
 }
-article .meta li {
+#body > article .meta li {
   display: inline;
-  font-size: 90%;
+  font-size: 0.8em;
   color: #888;
 }
-article .meta .date:before {
+#body > article .meta .date:before {
   content: "on ";
 }
-article .meta .tags:before {
+#body > article .meta .tags:before {
   content: ", in ";
 }
-article > section {
+#body > article > section {
   margin: 1.5em 0;
 }
-article > section section {
+#body > article > section section {
   margin: 0;
   padding: 0;
 }
@@ -438,7 +463,7 @@ pre {
   margin: 1.5em 0;
   padding: 1em 2em;
   border: 1px solid #EEE;
-  background-color: #F8F8f8;
+  background-color: #fff;
   line-height: 1.4;
   font-family: monospace;
   font-size: 13px;
@@ -482,7 +507,7 @@ small {
 code, samp, var, dfn {
   padding: 3px 6px;
   border: 1px solid #EEE;
-  background-color: #F8F8F8;
+  background-color: #FFF;
   font-family: monospace;
   color: #666;
 }
@@ -490,19 +515,17 @@ kbd {
   cursor: default;
   padding: 2px 4px;
   border: 1px solid #DDD;
-  border-color: #ddd #bbb #bbb #ddd;
-  border-color: #F8F8F8 #DDD #DDD #F8F8F8;
+  border-color: #EEE #DDD #DDD #EEE;
   border-radius: 1px;
-  background-color: #fafafa;
+  background-color: #DDD;
   background-image: -webkit-gradient(linear, left top, left bottom,
                                      from(#FFF), to(#F8F8F8));
-  background-image: -moz-linear-gradient(270deg, #fff, #f8f8f8);
-  background-image: -o-linear-gradient(270deg, #fff, #f8f8f8);
+  background-image: -moz-linear-gradient(270deg, #FFF, #F8F8F8);
+  background-image: -o-linear-gradient(270deg, #FFF, #F8F8F8);
   font-family: monospace;
 }
 kbd:hover {
-  border-color: #bbb #ddd #ddd #bbb;
-  border-color: #DDD #F8F8F8 #F8F8F8 #DDD;
+  border-color: #DDD #EEE #EEE #DDD;
   padding-bottom: 1px;
   position: relative;
   top: 1px;
@@ -548,7 +571,7 @@ h3#reply-title:before {
   clear: both;
 }
 .odd {
-  background-color: #f8f8f8;
+  background-color: #F8F8F8;
 }
 article.comment {
   position: relative;
@@ -663,7 +686,7 @@ p.form-submit input[type="submit"] {
   width: 720px;
   margin: 3em auto;
   padding: 0 0 3em;
-  border-bottom: 1px dashed #aaa;
+  border-bottom: 1px dashed #AAA;
   text-align: center;
   text-transform: uppercase;
   font-family: "Avenir Next", "Avenir", "Gill Sans", "Segoe UI", sans-serif;
@@ -673,8 +696,8 @@ p.form-submit input[type="submit"] {
 div.amazonAssociate {
   margin: 1.5em 0;
   padding: 24px;
-  border: 1px solid #eee;
-  background-color: #f8f8f8;
+  border: 1px solid #EEE;
+  background-color: #F8F8F8;
   text-align: right;
   color: #888;
   font-size: 11px;
