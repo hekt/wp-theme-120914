@@ -17,7 +17,7 @@ html {
   font-family: "Lucida Grande", "Segoe UI", sans-serif;
 }
 body {
-  margin: 32px auto 0;
+  margin: 0 auto 0;
   padding: 36px 48px 0;
   width: 720px;
   background-color: #FFF;
@@ -170,6 +170,7 @@ body > header form:after {
 }
 body > header input[type="text"] {
   width: 180px;
+  margin-top: 3px;
   font-family: "Avenir Next", "Avenir", "Gill Sans", "Segoe UI", sans-serif;
 }
 body > header input[type="submit"] {
