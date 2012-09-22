@@ -15,7 +15,7 @@
   <header>
     <h1><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a><?php edit_post_link('[Edit]', '<span class="edit">', '</span>'); ?></h1>
     <ul class="meta">
-      <li class="date"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo get_post_time('M j, Y'); ?></a></li><li class="tags"><?php the_tags("", ", ", ""); ?></li></ul>
+      <li class="date"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php echo get_post_time('M j Y'); ?></a></li><li class="tags"><?php the_tags("", ", ", ""); ?></li></ul>
     <!-- /ul -->
   </header>
 
