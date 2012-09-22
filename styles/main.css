@@ -174,6 +174,16 @@ body > header form:after {
 body > header input[type="text"] {
   width: 180px;
   margin-top: 3px;
+  -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1),
+                      0 1px 1px #FFF;
+  -moz-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1),
+                   0 1px 1px #FFF;
+  -ms-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1),
+                  0 1px 1px #FFF;
+  -o-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1),
+                 0 1px 1px #FFF;
+  box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1),
+              0 1px 1px #FFF;
   font-family: "Avenir Next", "Avenir", "Gill Sans", "Segoe UI", sans-serif;
 }
 body > header input[type="submit"] {
@@ -261,7 +271,7 @@ article #searchform input[type="text"] {
 #body > article { 
   clear: both;
   width: 720px;
-  margin: 3em auto;
+  margin: 3em auto 4em;
   padding: 0;
   line-height: 1.7;
   font-size: 14px;
@@ -283,7 +293,7 @@ article #searchform input[type="text"] {
   display: block;
   clear: both;
 }
-#body > article h1 {
+#body > article >header > h1 {
   margin: 0 0;
   padding: 8px 12px;
   /* border-top: 1px solid #FAFAFA; */
@@ -349,11 +359,17 @@ article #searchform input[type="text"] {
 /* asides */
 /* share */
 article aside {
-  margin: 3em 0 2em 0;
+  margin: 3em 0 3em 0;
+}
+#body > article aside h1 {
+  padding: 0;
+  background-color: transparent;
+  line-height: 1.8;
+  font-size: 1.5em;
 }
 article aside nav {
   padding: 1em 1.5em;
-  background-color: #f8f8f8;
+  background-color: #F0F0F0;
 }
 .share_buttons {
   margin: 0 0 4px 0;
@@ -473,14 +489,14 @@ pre {
 table {
   width: 100%;
   margin: 1.5em 0;
+  background-color: #FFF;
 }
 td, th {
   padding: 4px 6px;
-  border: 2px solid #eee;
+  border: 2px solid #EEE;
 }
 th {
-  border-color: #ddd;
-  background-color: #f8f8f8;
+  border-color: #DDD;
   color: #666;
 }
 table .num {
@@ -554,10 +570,11 @@ q {
   width: 720px;
   margin: 2em auto;
   padding: 0 0 1px 0;
+  border-top: 1px dashed #CCC;
 }
 h1#comments-title, h3#reply-title{
+  margin: 3em 0 2em;
   font-size: 1em;
-  margin-bottom: 1em;
 }
 h3#reply-title:before {
   display: none;
@@ -570,14 +587,12 @@ h3#reply-title:before {
 .commentlist li.comment {
   clear: both;
 }
-.odd {
-  background-color: #F8F8F8;
-}
 article.comment {
   position: relative;
   margin: 0;
   padding: 0;
   border: none;
+  font-size: 14px;
 }
 article.comment:after {
   content: "";
@@ -622,10 +637,6 @@ img.avatar {
 }
 
 /* form */
-#respond h3#reply-title {
-  margin-top: 2em;
-  margin-bottom: 1.5em;
-}
 #commentform p {
   font-size: 12px;
 }
@@ -696,8 +707,8 @@ p.form-submit input[type="submit"] {
 div.amazonAssociate {
   margin: 1.5em 0;
   padding: 24px;
-  border: 1px solid #EEE;
-  background-color: #F8F8F8;
+  border: 0 dashed #ccc;
+  border-width: 1px 0;
   text-align: right;
   color: #888;
   font-size: 11px;
@@ -759,7 +770,7 @@ div.syntaxhighlighter .toolbar {
   border: none !important;
 }
 .syntaxhighlighter table td.code .container textarea {
-  background-color: #F8F8F8 !important;
+  background-color: #FFF !important;
   color: #444 !important;
   border: none !important;
   -webkit-box-shadow: none !important;
