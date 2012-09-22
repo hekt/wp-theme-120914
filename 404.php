@@ -9,7 +9,7 @@
   <header>
     <h1><a href="http://blog.hekt.org/">404 Not Found</h1>
     <ul class="meta">
-      <li class="date"><a href="./">Jan 3, 2007</a></li></ul>
+      <li class="date"><a href="./">Jan 3 2007</a></li></ul>
     <!-- /ul -->
   </header>
 
