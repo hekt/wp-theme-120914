@@ -1,6 +1,21 @@
 (function($) {
   $(function() {
 
+    // placeholder
+    $("#commentform input[type='text'], #commentform textarea")
+      .focus(function() {
+        $(this).parent().addClass("focus");
+      });
+    $("#commentform input[type='text'], #commentform textarea")
+      .blur(function() {
+        if($(this).val()) {
+          $(this).parent().addClass("filled");
+        } else {
+          $(this).parent().removeClass("filled");
+        }
+        $(this).parent().removeClass("focus");
+      });
+
     // add class "num" to number only cells
     $("td")
       .filter(function() {
