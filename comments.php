@@ -21,7 +21,7 @@
   <?php if ( have_comments() ) : ?>
   <h1 id="comments-title">
     <?php
-	   printf( _n( '%2$s Comment', '%1$s Comments', get_comments_number(), 'twentyeleven' ),
+	   printf( _n( '1 Comment', '%1$s Comments', get_comments_number(), 'twentyeleven' ),
 	   number_format_i18n( get_comments_number() ), '<span>' . get_the_title() . '</span>' ); ?>
   </h1>
 
