@@ -30,8 +30,8 @@
       <h1>Share</h1>
       <ul>
         <li id="hatebu_button"><a href="http://b.hatena.ne.jp/entry/<?php echo ereg_replace('^http://', '', get_permalink()); ?>" target="_blank"><span class="text">B!</span><span class="count">0</span></li><!--
-     --><li id="tweet_button"><a href="http://twitter.com/intent/tweet?text=<?php echo urlencode(get_the_title()); ?>&url=<?php echo urlencode(get_permalink()); ?>" target="_blank"><span class="text">ツイート</span></a><a href="http://twitter.com/search?q=<?php echo urlencode(get_permalink()); ?>" target="_blank"><span class="count">0</span></a></li><!--
-     --><li id="fblike_button"><a href="http://www.facebook.com/plugins/like.php?href=<?php echo urlencode(get_permalink()); ?>" target="_blank"><span class="text">いいね !</span></a></li></ul>
+     --><li id="tweet_button"><a href="http://twitter.com/intent/tweet?text=<?php echo urlencode(get_the_title()); ?>&url=<?php echo urlencode(get_permalink()); ?>" target="_blank"><span class="text">Tweet</span></a><a href="http://twitter.com/search?q=<?php echo urlencode(get_permalink()); ?>" target="_blank"><span class="count">0</span></a></li><!--
+     --><li id="fblike_button"><a href="http://www.facebook.com/plugins/like.php?href=<?php echo urlencode(get_permalink()); ?>" target="_blank"><span class="text">Like</span></a></li></ul>
       <!-- /ul -->
     </nav>
 
