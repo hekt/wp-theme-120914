@@ -59,7 +59,7 @@
 
       <p class="comment-form-comment"><label for="comment">Comment</label><textarea id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea></p>
       <p class="form-submit">
-        <input name="submit" type="submit" id="submit" value="コメントを送信">
+        <input name="submit" type="submit" id="submit" value="Submit">
         <input type='hidden' name='comment_post_ID' value='<?php echo $id; ?>' id='comment_post_ID'>
         <?php do_action('comment_form', $post->ID); ?>
       </p>
