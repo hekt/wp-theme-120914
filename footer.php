@@ -2,6 +2,8 @@
   <address>&copy; 2007-2012 <a href="mailto:hektorg@gmail.com">hekt</a>.</address>
 </footer>
 
+<!-- scripts -->
+
 <script src="<?php bloginfo('template_directory'); ?>/scripts/common.js"></script>
 
 <?php if(is_single()): ?>
