@@ -10,6 +10,9 @@ input:focus,textarea:focus
 /* 
    General
  */
+html {
+  background-color: #333;
+}
 body {
   border-top: 12px solid #AAA;
   border-bottom: 12px solid #AAA;
@@ -248,13 +251,14 @@ article #searchform input[type="text"] {
 #body > article .edit {
   display: none;
 }
-/* #body > article header:hover .edit { */
-/*   display: inline; */
-/*   position: absolute; */
-/*   right: 0; */
-/*   bottom: 0; */
-/*   font-size: 11px; */
-/* } */
+#body > article h1:hover .edit {
+  display: inline;
+  position: absolute;
+  right: 0;
+  top: 0;
+  line-height: 1;
+  font-size: 11px;
+}
 
 .meta {
   margin: 0;
@@ -368,7 +372,7 @@ h1 + section > h1 {
 }
 hr {
   width: 64%;
-  margin: 1.5em auto;
+  margin: 2em auto;
   border: 1px dotted #ccc;
   border-width: 1px 0 0;
 }
@@ -463,11 +467,11 @@ code, samp, var, dfn {
 }
 kbd {
   cursor: default;
-  padding: 2px 4px;
+  padding: 2px 6px;
   border: 1px solid #DDD;
   border-color: #EEE #DDD #DDD #EEE;
   border-radius: 1px;
-  background-color: #DDD;
+  background-color: #FFF;
   background-image: -webkit-gradient(linear, left top, left bottom,
                                      from(#FFF), to(#F8F8F8));
   background-image: -moz-linear-gradient(270deg, #FFF, #F8F8F8);
@@ -504,6 +508,7 @@ q {
   width: 720px;
   margin: 2em auto;
   padding: 0 0 1px 0;
+  line-height: 1.7;
 }
 h1#comments-title, h3#reply-title{
   margin: 3em 0 2em;
@@ -591,9 +596,6 @@ img.avatar {
 #commentform p {
   font-size: 12px;
 }
-.comment-notes {
-  display: none;
-}
 .comment-form-author,
 .comment-form-email,
 .comment-form-url,
@@ -602,7 +604,7 @@ img.avatar {
   float: left;
   width: 32%;
   height: 32px;
-  margin: 0 0 0 2%;
+  margin: 0 0 2% 2%;
   line-height: 32px;
   background-color: #E8E8E8;
   -webkit-transition-duration: 0.2s;
@@ -613,7 +615,6 @@ img.avatar {
 .comment-form-comment {
   width: 100%;
   height: auto;
-  margin-top: 2%;
   margin-left: 0;
 }
 .comment-form-author label,
@@ -664,9 +665,10 @@ img.avatar {
 .comment-form-comment.filled label {
   opacity: 0;
 }
-p.logged-in-as {
-  margin: 0;
-  text-align: center;
+.comment-notes,
+.logged-in-as {
+  margin: 0 0 2% 0;
+  text-align: left;
   color: #888;
 }
 p.comment-form-comment {
@@ -774,7 +776,6 @@ div.syntaxhighlighter {
   -ms-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 13px !important;
 }
 div.syntaxhighlighter .toolbar {
   display: none;
@@ -817,4 +818,5 @@ div.syntaxhighlighter .toolbar {
 .syntaxhighlighter textarea {
   line-height: 1.2 !important;
   font-family: monospace !important;
+  font-size: 13px !important;
 }
