@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<?php ini_set( 'display_errors', 1 ); ?>
-
 <?php get_header(); ?>
 
 <div class="wrap autopagerize_page_element" id="body">
