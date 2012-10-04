@@ -4,10 +4,9 @@
         content="cddRBX0joldF5WkB2lKXfkGqWLkk2GJrvCIvWR59ux4=" />
   <meta name="y_key" content="4c1e79cfd9e84936" /> 
   <!--[if lte IE 8]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
-      </script>
-      <![endif]-->
-
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
   <title><?php wp_title('', true, 'right'); if (is_home()) { bloginfo('name'); } ?></title>
 
   <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>"  media="screen" />
