@@ -4,6 +4,7 @@
 
 <!-- scripts -->
 
+<script src="http://blog.hekt.org/scripts/jquery.placeholder.min.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/scripts/common.js"></script>
 
 <?php if(is_single()): ?>

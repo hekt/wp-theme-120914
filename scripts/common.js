@@ -5,9 +5,8 @@
     $("#commentform input[type='text'], #commentform textarea")
       .focus(function() {
         $(this).parent().addClass("focus");
-      });
-    $("#commentform input[type='text'], #commentform textarea")
-      .blur(function() {
+      })
+      .focusout(function() {
         if($(this).val()) {
           $(this).parent().addClass("filled");
         } else {
@@ -15,6 +14,8 @@
         }
         $(this).parent().removeClass("focus");
       });
+    // for IE (jquery.placeholder.js)
+    $("input[placeholder], textarea[placeholder]").placeholder();
 
     // add class "num" to number only cells
     $("td")
