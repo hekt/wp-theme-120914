@@ -174,8 +174,7 @@ article #searchform input[type="text"] {
   margin: 4em auto;
   text-align: center;
 }
-.pagenavi:before,
-.pagenavi:after {
+.pagenavi:before {
   content: "";
   display: block;
   margin: 4em 0;
@@ -679,6 +678,10 @@ p.comment-form-comment textarea {
   width: 100%;
   padding: 12px 16px;
   box-shadow: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
   box-sizing: border-box;
   border-color: transparent;
   background-color: transparent;
@@ -714,7 +717,11 @@ p.comment-form-comment textarea {
 
 /* autopagerize */
 .autopagerize_page_separator {
-  display: none;
+  width: 720px;
+  margin: 1.5em auto;
+  border: 0px dashed #FFF;
+  border-width: 1px 0;
+  border-top-color: #CCC;
 }
 .autopagerize_page_info {
   width: 720px;
